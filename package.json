@@ -1,10 +1,11 @@
 {
-    "name": "crawler-downloader",
-    "version": "1.0.0",
+    "name": "crawler-common",
+    "version": "1.0.2",
     "description": "",
-    "main": "index.js",
+    "main": "built/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "built": "babel -s -d built/ src/ "
     },
     "repository": {
         "type": "git",
@@ -29,6 +30,7 @@
     },
     "dependencies": {
         "amqplib": "^0.5.1",
+        "babel-types": "^6.20.0",
         "elasticsearch": "^12.1.3"
     }
 }
